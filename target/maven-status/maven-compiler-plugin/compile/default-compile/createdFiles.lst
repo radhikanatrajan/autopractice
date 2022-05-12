@@ -1,0 +1,6 @@
+com\test\autopractice\pages\ShoppingCartPage.class
+com\test\autopractice\pages\HomePage.class
+com\test\autopractice\pages\SelectionMenu.class
+com\test\autopractice\pages\BasePage.class
+com\test\autopractice\pages\DressPage.class
+com\test\autopractice\utils\ReadConfigProperties.class

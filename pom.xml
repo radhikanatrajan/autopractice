@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.test</groupId>
+  <artifactId>automationpractice</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+ 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<maven.compiler.source>8</maven.compiler.source>
+	<maven.compiler.target>8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.1.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>
+   
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+ <!-- https://mvnrepository.com/artifact/org.awaitility/awaitility -->
+<dependency>
+    <groupId>org.awaitility</groupId>
+    <artifactId>awaitility</artifactId>
+    <version>4.2.0</version>
+  
+</dependency>
+ 
+  </dependencies>
+  <build>
+ 
+    <plugins>
+
+   <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        
+         <artifactId>maven-surefire-plugin</artifactId>
+          <configuration>
+          <skipTests>true</skipTests> 
+          <systemPropertyVariables>
+          <InvocationCount>1</InvocationCount>
+          <sleepInterval>1</sleepInterval>
+      
+           </systemPropertyVariables>
+    
+        </configuration>
+            <executions>
+        
+         <execution>         
+           <phase>test</phase>
+          <goals>
+          <goal>test</goal>
+          </goals>
+          </execution>
+        
+        </executions>  
+        </plugin> 
+  
+         </plugins>
+  </build>
+</project>

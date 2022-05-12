@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Opening ChromeBrowser]]>
+    </line>
+    <line>
+      <![CDATA[Application Loaded]]>
+    </line>
+    <line>
+      <![CDATA[Price List : 
+$26.00
+$50.99
+$28.98
+$30.50
+$16.40
+High Price :50.99
+]]>
+    </line>
+    <line>
+      <![CDATA[Printed Dress]]>
+    </line>
+    <line>
+      <![CDATA[Quitting the Browser]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10314" started-at="2022-05-12T22:21:54 BST" finished-at="2022-05-12T22:22:04 BST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="10314" started-at="2022-05-12T22:21:54 BST" finished-at="2022-05-12T22:22:04 BST">
+      <class name="com.test.autopractice.QATest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.autopractice.QATest@782663d3]" name="setup" is-config="true" duration-ms="28044" started-at="2022-05-12T22:21:26 BST" finished-at="2022-05-12T22:21:54 BST">
+          <reporter-output>
+            <line>
+              <![CDATA[Opening ChromeBrowser]]>
+            </line>
+            <line>
+              <![CDATA[Application Loaded]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="chooseHighPriceDress()[pri:0, instance:com.test.autopractice.QATest@782663d3]" name="chooseHighPriceDress" duration-ms="10115" started-at="2022-05-12T22:21:54 BST" finished-at="2022-05-12T22:22:04 BST">
+          <reporter-output>
+            <line>
+              <![CDATA[Price List : 
+$26.00
+$50.99
+$28.98
+$30.50
+$16.40
+High Price :50.99
+]]>
+            </line>
+            <line>
+              <![CDATA[Printed Dress]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- chooseHighPriceDress -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.test.autopractice.QATest@782663d3]" name="quit" is-config="true" duration-ms="1654" started-at="2022-05-12T22:22:04 BST" finished-at="2022-05-12T22:22:06 BST">
+          <reporter-output>
+            <line>
+              <![CDATA[Quitting the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.test.autopractice.QATest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
